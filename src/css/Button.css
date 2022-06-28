@@ -1,0 +1,53 @@
+:root {
+  --color: #0aefff;
+  --border: 5px;
+}
+
+.delete-btn, .function-btn, .result-btn {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: .4rem;
+  place-self: center;
+  border: none;
+  transition: .3s all ease;
+}
+
+.delete-btn {
+  color: #ffe7d8;
+  text-shadow: 0 0 .5rem #e01e37;
+  border: var(--border) solid #ffe7d8;
+  box-shadow: 0 0 .6rem #e01e37, inset 0 0 .6rem #fc112c;
+}
+
+.function-btn {
+  color: #d2ffff;
+  text-shadow: 0 0 .5rem var(--color);
+  border: var(--border) solid #d2ffff;
+  box-shadow: 0 0 .6rem var(--color), inset 0 0 .6rem var(--color);
+}
+
+.result-btn {
+  height: 9rem;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  color: #fcf6bd;
+  text-shadow: 0 0 .5rem #fee440;
+  border: var(--border) solid #fcf6bd;
+  box-shadow: 0 0 .6rem #fee440, inset 0 0 .6rem #fee440;
+}
+
+.delete-btn:hover {
+  background-color: #e01e3744;
+}
+
+.function-btn:hover {
+  background-color: #0aefff44;
+}
+
+.result-btn:hover {
+  background-color: #fee44044;
+}

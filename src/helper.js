@@ -1,3 +1,9 @@
+Array.prototype.deleteAllValues = function() {
+  while (this.length >= 1) {
+    this.pop()
+  }
+}
+
 const numbers = []
 let innerSign = ""
 
@@ -38,11 +44,10 @@ export function showResult(ref) {
     if (num2 === 0) {
       ref.current.innerText = "Error"
       setTimeout(() => ref.current.innerText = "0", 2000)
+      numbers.deleteAllValues()
       return
     } else result = numbers[0] / numbers[1]
-  } else if (innerSign === "%") {
-    result = numbers[0] * (numbers[1] / 100)
-  }
+  } else if (innerSign === "%") result = numbers[0] * (numbers[1] / 100)
   ref.current.innerText = fixed(result.toString())
   numbers.length = 0
 }

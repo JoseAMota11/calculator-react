@@ -4,15 +4,15 @@
 }
 
 .delete-btn, .function-btn, .result-btn {
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
   background-color: transparent;
   font-size: 2rem;
   font-weight: 600;
   border-radius: .4rem;
   place-self: center;
   border: none;
-  transition: .3s all ease;
+  transition: .2s all ease;
 }
 
 .delete-btn {
@@ -30,7 +30,7 @@
 }
 
 .result-btn {
-  height: 9rem;
+  height: 11rem;
   grid-column-start: 4;
   grid-row-start: 4;
   grid-row-end: 6;
@@ -38,6 +38,18 @@
   text-shadow: 0 0 .5rem #fee440;
   border: var(--border) solid #fcf6bd;
   box-shadow: 0 0 .6rem #fee440, inset 0 0 .6rem #fee440;
+}
+
+.delete-btn:active {
+  box-shadow: 0 0 1.2rem #e11e37, inset 0 0 1.2rem #fd112c;
+}
+
+.function-btn:active {
+  box-shadow: 0 0 1.2rem var(--color), inset 0 0 1.2rem var(--color);
+}
+
+.result-btn:active {
+  box-shadow: 0 0 1.2rem #fee440, inset 0 0 1.2rem #fee440;
 }
 
 .delete-btn:hover {

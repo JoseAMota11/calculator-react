@@ -5,8 +5,8 @@
 }
 
 .calculator__container {
-  aspect-ratio: 9 / 14;
-  width: 400px;
+  aspect-ratio: 9 / 16;
+  width: 380px;
   background-color: transparent;
   border-radius: 1rem;
 }
@@ -35,6 +35,11 @@
   font-size: 2rem;
   color: #d8f3dc;
   text-shadow: 0 0 .5rem #ccff33;
+}
+
+.result::selection {
+  background: rgba(0, 0, 0, .3);
+  text-shadow: none;
 }
 
 .buttons__container {

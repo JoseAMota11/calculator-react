@@ -2,4 +2,4 @@
 
 This is a simple React Calculator.
 
-Project Link: <https://glittering-parfait-be49e7.netlify.app>
+Project Link: <https://profound-fenglisu-05b4e5.netlify.app/>
